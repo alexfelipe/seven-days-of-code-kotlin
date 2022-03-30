@@ -1,5 +1,9 @@
 package br.com.alexf.sevenDaysOfCode
 
-fun main() {
-    println("IMDB API")
+import br.com.alexf.sevenDaysOfCode.webclient.RetrofitInit
+import kotlinx.coroutines.runBlocking
+
+fun main() = runBlocking {
+    val movies = RetrofitInit().moviesService.findTop250Movies()
+    println(movies.body())
 }
