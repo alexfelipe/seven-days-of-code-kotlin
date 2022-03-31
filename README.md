@@ -4,9 +4,12 @@ Challenge to practice codes exercises that consumes a [movie API](https://imdb-a
   
 # Challenges
 
-- day1:
+- `day 1`:
   - create project 
-  - consume the top250 movies and print on console.
+  - consume the top250 movies and print on console
+- `day 2`:
+  - extracting specific fields from movies JSON with String and Collection methods
+  - unit tests to validate the logic extraction 
 
 ## 📁 Access the project
 
