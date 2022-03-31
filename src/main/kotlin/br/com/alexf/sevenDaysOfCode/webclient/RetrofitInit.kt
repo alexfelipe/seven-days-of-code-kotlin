@@ -22,5 +22,4 @@ class RetrofitInit {
     val moviesService: MovieService
         get() = retrofit.create(MovieService::class.java)
 
-
 }

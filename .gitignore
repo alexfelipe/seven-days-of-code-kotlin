@@ -104,3 +104,5 @@ Icon
 Network Trash Folder
 Temporary Items
 .apdisk
+
+/src/main/kotlin/br/com/alexf/sevenDaysOfCode/ApiKeyImdb.kt
