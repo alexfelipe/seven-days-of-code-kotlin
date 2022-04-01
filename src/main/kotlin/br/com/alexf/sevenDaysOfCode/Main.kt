@@ -5,6 +5,11 @@ import kotlinx.coroutines.runBlocking
 
 fun main() = runBlocking<Unit> {
     val client = MovieWebClient()
+//    printSomeFieldsFromMovieRawJson(client)
+    println(client.findTop250Movies())
+}
+
+private suspend fun printSomeFieldsFromMovieRawJson(client: MovieWebClient) {
     val json = client.findTop250MoviesAsRawJson()
         .body()?.string()
     val movieTitles = json?.movieFieldsBy("title")
