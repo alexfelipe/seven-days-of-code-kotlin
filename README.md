@@ -10,6 +10,8 @@ Challenge to practice codes exercises that consumes a [movie API](https://imdb-a
 - `day 2`:
   - extracting specific fields from movies JSON with String and Collection methods
   - unit tests to validate the logic extraction 
+- `day 3`:
+  - creating the `Movie` model to get the desired fields
 
 ## 📁 Access the project
 
