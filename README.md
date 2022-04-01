@@ -15,4 +15,4 @@ Challenge to practice codes exercises that consumes a [movie API](https://imdb-a
 
 ## 📁 Access the project
 
-You can check out the code in [dev branch](https://github.com/alura-cursos/seven-days-of-code-kotlin/tree/dev).
+You can check out the code in [dev branch](https://github.com/alexfelipe/seven-days-of-code-kotlin/tree/dev).
