@@ -12,6 +12,10 @@ Challenge to practice codes exercises that consumes a [movie API](https://imdb-a
   - unit tests to validate the logic extraction 
 - `day 3`:
   - creating the `Movie` model to get the desired fields
+- `day 4`:
+  - creating the HTML and CSS to presents the top 250 movies:
+![HTML sample to show top 250 movies](https://user-images.githubusercontent.com/8989346/161401699-a3ea37ae-7522-4595-832c-8c8c6e75a950.png)
+
 
 ## 📁 Access the project
 
