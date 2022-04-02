@@ -1,9 +1,10 @@
 package br.com.alexf.sevenDaysOfCode
 
+import br.com.alexf.sevenDaysOfCode.extensions.movieFieldsBy
 import org.junit.jupiter.api.Assertions
 import org.junit.jupiter.api.Test
 
-internal class MainKtTest {
+internal class JsonExtractionTest {
 
     private val someJsonFields =
         """

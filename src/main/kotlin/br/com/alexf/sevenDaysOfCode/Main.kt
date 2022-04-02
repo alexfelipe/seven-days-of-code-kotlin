@@ -1,35 +1,18 @@
 package br.com.alexf.sevenDaysOfCode
 
+import br.com.alexf.sevenDaysOfCode.ui.MainPage
 import br.com.alexf.sevenDaysOfCode.webclient.MovieWebClient
+import kotlinx.coroutines.delay
 import kotlinx.coroutines.runBlocking
+import kotlin.system.measureTimeMillis
 
 fun main() = runBlocking<Unit> {
     val client = MovieWebClient()
-//    printSomeFieldsFromMovieRawJson(client)
-    println(client.findTop250Movies())
+    client.findTop250MoviesAsRawJson()
+        .body()?.string()?.let { json ->
+            printSomeFieldsFromMovieRawJson(json)
+        }
+
+    MainPage()
+        .createNewPage(client.findTop250Movies())
 }
-
-private suspend fun printSomeFieldsFromMovieRawJson(client: MovieWebClient) {
-    val json = client.findTop250MoviesAsRawJson()
-        .body()?.string()
-    val movieTitles = json?.movieFieldsBy("title")
-    println(movieTitles)
-    val movieImages = json?.movieFieldsBy("image")
-    println(movieImages)
-}
-
-fun String.movieFieldsBy(
-    field: String
-): List<String> {
-    val jsonFieldsSplitted = splittJsonFields(this)
-    return jsonFieldsSplitted.filter {
-        it.matchesBy(field)
-    }
-}
-
-fun splittJsonFields(json: String) = json
-    .replace("\",\"", "\"','\"")
-    .split("{", "}", "[", "]", "','")
-
-private fun String.matchesBy(field: String) =
-    this.matches(Regex("\"($field)\":\"((\\\\\"|[^\"])*)\""))
