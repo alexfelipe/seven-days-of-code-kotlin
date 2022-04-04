@@ -17,6 +17,8 @@ Challenge to practice codes exercises that consumes a [movie API](https://imdb-a
 ![HTML sample to show top 250 movies](https://user-images.githubusercontent.com/8989346/161401699-a3ea37ae-7522-4595-832c-8c8c6e75a950.png)
 - `day 5`:
   - encapsulating the code of HTTP request and JSON parsing, but was done on previous days 😄
+- `day 6`:
+  -  creating the interface `PageContent` to abstract the page creation. This interface enable reuse the same code to generate new pages with other contents.
 
 
 ## 📁 Access the project
