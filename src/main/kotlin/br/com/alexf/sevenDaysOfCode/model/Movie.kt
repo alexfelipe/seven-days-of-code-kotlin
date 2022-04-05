@@ -5,4 +5,7 @@ data class Movie(
     val image: String,
     val rating: String,
     val year: String
-)
+) : Comparable<Movie> {
+    override fun compareTo(other: Movie): Int =
+        this.rating.compareTo(other.rating)
+}

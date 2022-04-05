@@ -11,6 +11,6 @@ fun main() = runBlocking<Unit> {
 //        .body()?.string()?.let { json ->
 //            printSomeFieldsFromMovieRawJson(json)
 //        }
-    val movies = client.findTop250Movies()
+    val movies = client.findTop250Movies().sorted()
     MainPage(Top250MoviesContent(*movies.toTypedArray())).createPage()
 }
