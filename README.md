@@ -18,7 +18,9 @@ Challenge to practice codes exercises that consumes a [movie API](https://imdb-a
 - `day 5`:
   - encapsulating the code of HTTP request and JSON parsing, but was done on previous days 😄
 - `day 6`:
-  -  creating the interface `PageContent` to abstract the page creation. This interface enable reuse the same code to generate new pages with other contents.
+  - creating the interface `PageContent` to abstract the page creation. This interface enable reuse the same code to generate new pages with other contents.
+- `day 7`:
+  - implementation of custom movie sorting by rating
 
 
 ## 📁 Access the project
